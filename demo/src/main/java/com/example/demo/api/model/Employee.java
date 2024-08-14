@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 public class Employee {
     
     private @Id
-    @GeneratedValue Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
   
     private String nom;
 
