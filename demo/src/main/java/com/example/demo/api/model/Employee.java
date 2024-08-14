@@ -3,22 +3,22 @@ package com.example.demo.api.model;
 import jakarta.persistence.*;
 
 @Entity
-public class User {
+public class Employee {
     
     private @Id
     @GeneratedValue Long id;
   
     private String nom;
 
-    public User() {
+    public Employee() {
     }
 
-    public User(Long id, String nom) {
+    public Employee(Long id, String nom) {
         this.id = id;
         this.nom = nom;
     }
 
-    public User(String nom) {
+    public Employee(String nom) {
         this.nom = nom;
     }
 
