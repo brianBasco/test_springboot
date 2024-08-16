@@ -32,10 +32,10 @@ public class ImcController {
     }
 
     @GetMapping("/hello")
-    ResponseEntity<String> hello() {
+    ResponseEntity<Map<String,String>> hello() {
         Map<String, String> res = i.calculate(new ImcDTO(80,1.85));
-        String advise = res.get("advise");
-    return new ResponseEntity<>(advise, HttpStatus.OK);
+        //String advise = res.get("advise");
+    return new ResponseEntity<>(res, HttpStatus.OK);
 }
 
     @GetMapping("cal")
